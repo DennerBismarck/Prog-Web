@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styleCalculadora.css">
+</head>
+<body>
+    <div class="gridCalc">
+        <div class="gcalc" id="espaco"></div>
+        <button class="gcalc" id="continha" onclick="funfar('+')">+</button>
+        <button class="gcalc" id="continha" onclick="funfar('-')">-</button>
+        <button class="gcalc" id="continha" onclick="funfar('*')">*</button>
+        <button class="gcalc" id="continha" onclick="funfar('/')">/</button>
+        <button class="gcalc" onclick="funfar('7')">7</button>
+        <button class="gcalc" onclick="funfar('8')">8</button>
+        <button class="gcalc" onclick="funfar('9')">9</button>
+        <button class="gcalc" id="igual" onclick="conta()">=</button>
+        <button class="gcalc" onclick="funfar('4')">4</button>
+        <button class="gcalc" onclick="funfar('5')">5</button>
+        <button class="gcalc" onclick="funfar('6')">6</button>
+        <button class="gcalc" onclick="funfar('1')">1</button>
+        <button class="gcalc" onclick="funfar('2')">2</button>
+        <button class="gcalc" onclick="funfar('3')">3</button>
+        <button class="gcalc" onclick="funfar('0')">0</button>
+        <button class="gcalc" onclick="funfar('.')">.</button>
+        <button class="gcalc" onclick="zerar()">C</button>
+    </div>
+</body>
+<script src="scriptCalculadora.js"></script>
+</html>

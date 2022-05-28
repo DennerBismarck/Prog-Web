@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color:steelblue
+}
+.gridCalc{
+    display: grid;
+    width: 30%;
+    height: 30%;
+    background-color: darkgray;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 5px;
+    border-radius: 5px;
+}
+.gcalc{
+    background-color:darkmagenta;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+.gcalc:hover{
+    background-color: darkorchid;
+}
+#espaco{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 50px;
+    margin-top: 2%;
+    background-color: darkslateblue;
+    color:ghostwhite;
+    text-align: start;
+}
+#igual{
+    grid-row-start: 3;
+    grid-row-end:7;
+    background-color: brown;
+}
+#igual:hover{
+    background-color: darkgoldenrod;
+}
+#continha{
+    background-color:midnightblue
+}
+#continha:hover{
+    background-color: cadetblue;
+}

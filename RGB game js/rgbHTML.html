@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do RGB</title>
+    <link rel="stylesheet" href="rgbCSS.css">
+</head>
+<body>
+    <div class="barraCima">Jogo do RGB!</div>
+    <div class="barraCima" id="cordita">Clique em jogar para iniciar!</div>
+    <br>
+    <div class="divJogo">
+        <button class="cor" id="botao1" onclick="ganho(1)"></button>
+        <button class="cor" id="botao2" onclick="ganho(2)"></button>
+        <button class="cor" id="botao3" onclick="ganho(3)"></button>
+        <button class="cor" id="botao4" onclick="ganho(4)"></button>
+        <button class="cor" id="botao5" onclick="ganho(5)"></button>
+        <button class="cor" id="botao6" onclick="ganho(6)"></button>
+    </div>
+    <br>
+    <button class="jogar" onclick="jogo()">Jogar!</button>
+</body>
+<script src="rgbJS.js"></script>
+</html>
