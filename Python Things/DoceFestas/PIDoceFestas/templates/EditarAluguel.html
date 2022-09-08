@@ -1,0 +1,136 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Doce Festas - Editar</title>
+<style type="text/css">
+    /* CSS da página*/
+    *{
+                margin:0;
+                padding:0;
+                
+            }
+
+            body{
+                background-image: url("imgs/bolo.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                backdrop-filter: blur(3px);
+            }
+    #header{
+                color: white;
+                font-family: American Typewriter, serif;
+                font-size: 200%;
+                width: 100%;
+                height: 25%;
+                background-color: mediumvioletred;
+                top: 10%;
+                left: 50%;
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                box-shadow: 0 0 1em rgb(49, 48, 44);
+            }
+
+            form{
+                background: #e7e7d3;
+                border-radius: 5px;
+                font-size: 100%;
+                height: 40%;
+                max-width: 100%;
+                padding: 0 5px;
+                width: 30%;
+                margin-top: 3px;
+            }
+            #enviar{
+                font-size: 120%;
+                background-color: #d8b800;
+                border-radius: 5px;
+                font-size: 100%;
+                height: 40px;
+                max-width: 200%;
+                padding: 0 5px;
+                width: 40%;
+                color: #fff;
+                cursor:pointer;
+            }
+
+            .formulario{
+                position: absolute;
+                left:50%;
+                top:55%;
+                transform: translate(-50%,-50%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            ul{
+            position: absolute;
+            top: 44%;
+            left: 130%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 30%;
+        }
+    
+        ul li{
+            position: relative;
+
+        }
+
+        ul li ul li{
+            color: black;
+            font-size: 15px;
+            border: 1px solid black;
+            background-color: #d8b800;
+            width: 350%;
+            text-align: left;
+
+        } 
+
+        li ul{
+            position: absolute;
+            left: 120%;
+            top: 0;
+            display: none;
+        }
+        
+        ul li a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            background: #e7e7d3;
+            padding: 3px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        li:hover ul {display: block;}
+        li a:hover {background-color: mediumvioletred;}
+
+</style>
+	
+</head>
+
+<body>
+   <!-- Div da parte de cima--> 
+    <div id = header>
+            <h1 style= "text-align: center">Editar Aluguél</h1>
+    </div>
+
+    <a href="{% url 'index' %}" id = "enviar">Voltar</a>
+
+<!--Formulário com tudo que deverá ser preenchido.--> 
+<form class="formulario" method="POST" action="?">
+    {% csrf_token %}
+    {{ formAluguel }}
+
+    <br>
+    <input id="enviar" type="submit" value="ENVIAR">
+
+</form>
+
+</body>
+
+</html>

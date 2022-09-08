@@ -79,7 +79,7 @@
     	    position: absolute;
     	    top: 86%;
     	    left: 50%;
-    	    transform: translate(-50%, -86%);
+    	    transform: translate(-50%, -160%);
         }
 
         .navigation{
@@ -176,10 +176,10 @@
     <div class="menu">
     	<ul>
     		<center>
-    		<li><a href="CadastroDoCliente.php">Cadastro do cliente</a></li>
-    		<li><a href="CadastroDoAluguel.php">Cadastro do aluguel</a></li>
-    		<li><a href="TabelaDosClientes.php">Tabela dos clientes</a></li>
-    		<li><a href="TabelaDosAlugueis.php">Tabela dos alugueis</a></li>
+    		<li><a href="{% url 'cadastroCli'%}">Cadastro do cliente</a></li>
+    		<li><a href="{% url 'cadastroAlu'%}">Cadastro do aluguel</a></li>
+    		<li><a href="{% url 'tabelaCli'%}">Tabela dos clientes</a></li>
+    		<li><a href="{% url 'tabelaAlu'%}">Tabela dos alugueis</a></li>
     	</center>
     	</ul>
     	
